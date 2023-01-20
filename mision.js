@@ -49,8 +49,8 @@ if (examen1 < 0 || examen1 > 5) {
                     if (examenFinal < 0 || examenFinal > 5) {
                         alert("Ingrese un valor valido")
                     } else {
-                        let autoevaluación = parseFloat(prompt('Ingrese la nota de autoevaluación (estudiante)'));
-                        if (autoevaluación < 0 || autoevaluación > 5) {
+                        let autoevaluacion = parseFloat(prompt('Ingrese la nota de autoevaluación (estudiante)'));
+                        if (autoevaluacion < 0 || autoevaluacion > 5) {
                             alert("Ingrese un valor valido")
                         } else {
                             let coAutoevaluacion = parseFloat(prompt('Ingrese la nota de autoevaluacion (docente)'));
