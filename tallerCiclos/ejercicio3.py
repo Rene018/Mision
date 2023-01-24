@@ -22,14 +22,10 @@ while operacion!=0:
 		producto=numero1*numero2
 		print('El producto entre ',numero1,' y ',numero2,' es: ',producto)
 	elif operacion==4:
-		numero1=int( input("ingrese un numero: "))
-		if numero1==0:
-			print('ingrese un valor valido')
+		numero1=int( input("Ingrese un numero: "))
+		numero2=int( input("Ingrese un numero: "))
+		if numero2==0:
+			print('Ingrese un valor valido')
 		else:
-			numero2=int( input("ingrese un numero: "))
-			if numero2==0:
-				print('ingrese un valor valido')
-			else:
-				
-				sumatoria=numero1+numero2
-				print('La suma de ',numero1,' y ',numero2,' es: ', sumatoria)
+			division=numero1/numero2
+			print('el entre',numero1,' y ',numero2,' es: ', sumatoria)
