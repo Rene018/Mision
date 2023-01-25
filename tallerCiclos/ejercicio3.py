@@ -33,5 +33,4 @@ while operacion != 0:
             else:
 
                 division = numero1/numero2
-                print('La divisioen de ', numero1,
-                      ' y ', numero2, ' es: ', division)
+                print('La divisio entre ', numero1,' y ', numero2, ' es: ', division)
