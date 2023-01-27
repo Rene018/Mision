@@ -5,4 +5,4 @@ segundoNumero =int(input('Ingrese un numero:'))
 for primerNumero in range(segundoNumero+1):
     if primerNumero%2==0:
         suma+=primerNumero
-print(suma)
+print('la sumatoria de los numeros pares entre ',primerNumero,' y ',segundoNumero,' es: ', suma)
