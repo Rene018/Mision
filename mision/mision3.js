@@ -80,12 +80,7 @@ while (opcionMenu1 != 0) {
 
                                     });
                                 }
-
-
-
                             }
-
-
                             listadoEstudiantes.push(infoEstudiante)
                             infoEstudiante = {}
                             cont += 1
