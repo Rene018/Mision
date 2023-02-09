@@ -2,18 +2,57 @@
 <html>
 
 <head>
-    <title></title>
+    <title>
+        Clientes
+    </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="#" method="get">
-        <p for="nombre" >Nombre: <input type="text" autofocus id="nombre" required></p>
-        <p for="correo" >Correo : <input type="email" id="correo" required></p>
-        <p for="url" >URL: <input type="url" id="url" placeholder="Escribe la URL de tu página web personal" required></p>
-        
-    </form>
+    <h1>
+        Clientes
+    </h1>
+    <div id="principal">
 
+        <h2>Datos personales</h2>
+
+        <form action="#" method="get">
+            <div class="segundario">
+
+                <label for="nombre">Nombre</label><b></b>
+                <input type="text" id="nombre">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion">
+
+                <label for="telefono" Nombre>Telefono</label>
+                <input type="text" id="telefono">
+                <b><input type="button" value="Guardar cambios" id="boton"></b>
+            </div>
+            <div class="segundario">
+                <label for="cc">Nit/CC</label>
+                <input type="text" id="cc">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad">
+
+                <label for="contacto" Nombre>Contacto</label>
+                <input type="text" id="contacto">
+            </div>
+            <div class="tercero">
+                <label for="ct">Cupo total</label>
+                <input type="text" id="cc">
+
+                <label for="cd">Cupo disponible</label>
+                <input type="text" id="ciudad">
+
+                <label for="dg" Nombre>Dias de gracia</label>
+                <input type="text" id="contacto">
+            </div>
+            
+
+        </form>
+    </div>
 </body>
 
 </html>
