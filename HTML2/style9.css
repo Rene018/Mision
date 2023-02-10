@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    background-color: aqua;
+    margin: 20px;
+    padding: 20px;
+
+}
+div{
+    display: flex;
+    margin: 40px;
+}
+a{
+    margin: 5px;
+    padding: 3px;
+    background-color: ;
+    color: black;
+    text-decoration-line: none;
+}
+a:hover{
+    color: blue;
+}
+img{
+    height: 300px;
+    width: 260;
+}

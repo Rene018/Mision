@@ -1,0 +1,15 @@
+img{
+    width: 240px;
+    height: 200px;
+    margin: 0px 10px 20px;
+}
+h1{
+    display: flex;
+    margin-bottom: 0px;
+    font-size: 27px;
+    margin-left: 10px;
+}
+table{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,29 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+}
+h1{
+    text-align: center;
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+th{
+    border: 1px black;
+    border-style: solid;
+    padding: 4px;
+    background-color: rgba(83, 76, 76, 0.315);
+}
+td{
+    border: 1px black;
+    border-style: dotted;
+}
+.sombreado:hover{
+    background-color: rgba(134, 124, 124, 0.315);
+}
