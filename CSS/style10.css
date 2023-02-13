@@ -1,0 +1,29 @@
+body{
+    margin: 0%;
+}
+.header{
+    position: fixed;
+    width:100% ;
+    padding: 1%;
+    background-color: black;
+    color: blue;
+}
+main{
+    display: flex;
+}
+.lateral{
+    position: fixed;
+    height: 100%;
+    background-color: rgba(95, 90, 90, 0.767);
+    
+    width: 200px;
+}
+footer{
+    position: fixed;
+    left:200px ;
+    width: 100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
