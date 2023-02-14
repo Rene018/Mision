@@ -1,10 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    margin: 0%;
+    height: 100vh;
 }
 .header{
-    position: fixed;
+    display: block;
     width:100% ;
-    padding: 1%;
+    padding: 2%;
     background-color: black;
     color: blue;
 }
@@ -12,17 +17,17 @@ main{
     display: flex;
 }
 .lateral{
-    position: fixed;
-    height: 100%;
     background-color: rgba(95, 90, 90, 0.767);
-    
-    width: 200px;
+    text-align: center;
 }
 footer{
-    position: fixed;
-    left:200px ;
+    display: block;
+    background-color: rgb(54, 54, 54);
     width: 100%;
     text-align: center;
+    padding: 2.1%;
+    display: flexbox;
+    
 }
 a{
     text-decoration: none;
