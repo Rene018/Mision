@@ -1,50 +1,62 @@
-body{
+body {
     display: flex;
     justify-content: center;
 }
-.container{
+
+.container {
     display: grid;
     height: 100%;
-    width: 70%; 
+    width: 70%;
     gap: 5px;
     grid-template-areas:
-    "foto1 foto3 foto5 foto5"
-    "foto1 foto4 foto6 foto8"
-    "foto2 foto4 foto7 foto7";
+        "foto1 foto3 foto5 foto5"
+        "foto1 foto4 foto6 foto8"
+        "foto2 foto4 foto7 foto7";
 }
-.foto{
-    background-position: center center;
+
+.foto {
     background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    height: 200px;
 }
-#foto1{
+
+#foto1 {
     grid-area: foto1;
     background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto2{
+
+#foto2 {
     grid-area: foto2;
     background-image: url('https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto3{
+
+#foto3 {
     grid-area: foto3;
-    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/2426085/pexels-photo-2426085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto4{
+
+#foto4 {
     grid-area: foto4;
     background-image: url('https://images.pexels.com/photos/8198212/pexels-photo-8198212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto5{
+
+#foto5 {
     grid-area: foto5;
     background-image: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto6{
-    grid-area: foto5;
-    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
+#foto6 {
+    grid-area: foto6;
+    background-image: url('https://images.pexels.com/photos/4571219/pexels-photo-4571219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto7{
+
+#foto7 {
     grid-area: foto7;
-    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-#foto8{
+
+#foto8 {
     grid-area: foto8;
-    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/3550240/pexels-photo-3550240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }

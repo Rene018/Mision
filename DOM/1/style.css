@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.header{
+    display: block;
+    width:100% ;
+    padding: 2%;
+    background-color: black;
+    color: blue;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.lateral{
+    background-color: rgba(95, 90, 90, 0.767);
+    width: 80%;
+}
+ul{
+    margin-left: 25%;
+    margin-top: 25%;
+}
+#info{
+    display: grid;
+    margin: 1%;
+    gap: 1%;
+}
+a{
+    font: 1.2em sans-serif;
+    text-decoration: none;
+}
+p{
+    margin-right:  20%;
+}
