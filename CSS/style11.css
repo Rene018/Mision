@@ -12,54 +12,39 @@ body{
     "foto1 foto4 foto6 foto8"
     "foto2 foto4 foto7 foto7";
 }
-.foto
-.foto1{
-    align-items: center;
+.foto{
+    background-position: center center;
     background-size: cover;
+}
+#foto1{
     grid-area: foto1;
     background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto2{
-    align-items: center;
-    background-size: cover;
-    height: max-content;
-    
+#foto2{
     grid-area: foto2;
     background-image: url('https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto3{
-    align-items: center;
-    background-size: cover;
+#foto3{
     grid-area: foto3;
-    background-image: url();
+    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto4{
-    align-items: center;
-    background-size: cover;
+#foto4{
     grid-area: foto4;
     background-image: url('https://images.pexels.com/photos/8198212/pexels-photo-8198212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto5{
-    align-items: center;
-    background-size: cover;
+#foto5{
     grid-area: foto5;
     background-image: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto6{
-    align-items: center;
-    background-size: cover;
+#foto6{
     grid-area: foto5;
-    background-image: url();
+    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto7{
-    align-items: center;
-    background-size: cover;
+#foto7{
     grid-area: foto7;
-    background-image: url();
+    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
-.foto8{
-    align-items: center;
-    background-size: cover;
+#foto8{
     grid-area: foto8;
-    background-image: url();
+    background-image: url('https://images.pexels.com/photos/9475924/pexels-photo-9475924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
