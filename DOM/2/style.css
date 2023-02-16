@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    background-color: #89b2a2;
+    background-image: url('/IMG/pngwing.com.png');
+    background-size: 25%;
+    
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    min-height:100%;
+    justify-content: center;
+    align-items: center;
+    color: #fafad4;
+}
+.form{
+    display: grid;
+    gap: 10px;
+    background-color: #b0d1b2;
+    padding: 2%;
+    border-radius: 10px;
+}
+form{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "1 2"
+    "3 4"
+    "5 5"
+    "6 6";
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 10px;
+    border: 2px;
+    padding: 3px 5px;
+}
+#nombre{grid-area: 1;}
+#ap{grid-area: 2;}
+#edad{grid-area: 3;}
+#fn{grid-area: 4;}
+#salario{grid-area: 5;}
+#submit{grid-area: 6;}

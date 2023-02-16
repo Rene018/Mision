@@ -4,31 +4,23 @@
     box-sizing: border-box;
 }
 body{
+    display:grid ;
     height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "lateral info";
 }
 .header{
-    display: block;
-    width:100% ;
-    padding: 2%;
+    grid-area: header;
     background-color: black;
     color: blue;
-}
-main{
-    display: flex;
-    justify-content: space-between;
+    
 }
 .lateral{
-    background-color: rgba(95, 90, 90, 0.767);
-    width: 80%;
-}
-ul{
-    margin-left: 25%;
-    margin-top: 25%;
+grid-area: lateral;
 }
 #info{
-    display: grid;
-    margin: 1%;
-    gap: 1%;
+    grid-area: info;
 }
 a{
     font: 1.2em sans-serif;
