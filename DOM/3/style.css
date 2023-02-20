@@ -1,25 +1,31 @@
 *{
+
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 html, body{
+   
     height: 100%;
 }
 
 #main{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    gap: 10px;
 }
 #container{
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     gap: 5px;
 }
 .elt{
+
     height: 200px;
     width: 200px;
     border: 20%;
