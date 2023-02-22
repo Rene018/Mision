@@ -1,0 +1,62 @@
+{
+    "Preguntas": [
+        {
+            "pregunta": "Cualquier animal o planta que se encuentre bajo amenaza de desaparecer se dice que está:",
+            "respuestas": [
+                "A. En peligro de extinción",
+                "B. Extinto",
+                "C. Protegido",
+                "D. Sensible"
+            ]
+        },
+        {
+            "pregunta": "¿Cuál de los siguientes animales NO está extinto?",
+            "respuestas": [
+                "A. Dodo",
+                "B. Mamut",
+                "C. Rinocerontes Negros",
+                "D. Dinosaurios"
+            ]
+        },
+        {
+            "pregunta": "El Rinoceronte Negro es una de las especies en estado crítico de extinción. Es nativo de... ",
+            "respuestas": [
+                "A. Norte de África",
+                "B. Asia",
+                "C. Suroeste y Este de África",
+                "D. Australia"
+            ]
+        },
+        {
+            "pregunta":"El tigre tambien se encuentra en peligro de extinción. ¿Cuál es su nombre científico?" ,
+            "respuestas": [
+                "A. Tigrus",
+                "B. Tigris",
+                "C. Panthera tigris",
+                "D. Panthera uncia"
+            ]
+        },
+        {
+            "pregunta":"Hormiga dinosaurio y serpiente de arrecife Sahul están en peligro. ¿Dónde viven estos animales?",
+            "respuestas": [
+                "A. Asia",
+                "B. África",
+                "C. Australia",
+                "D. Sudamérica y África"
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
