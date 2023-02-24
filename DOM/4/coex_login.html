@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Coex</title>
 </head>
+
 <body>
-    <div class="" ></div>
+    <main>
+        <div id="container" class="grid font-['Montserrat'] pt-[16px]">
+            <div class="md:px-[16px]" id="container.lateral">
+                <div id="lateral" class="md:w-full flex flex-col p-[16px] bg-green-100">
+                    <div id="titulo">
+                        <h1 class="text-[173%] font-bold" >Campus Coex</h1>
+                    </div>
+                    <div id="formulario">
+                        <h1 class=" font-thin text-[131%]">Registrarse</h1>
+                        <form class="flex flex-col" action="#" method="get">
+                            <label for="nombre">Nombre de usuario <br></label>
+                            <input type="text" id="nombre" placeholder="Nombre de usuario">
+                            <label for="contrasena">Contraseña <br></label>
+                            <input type="text" id="contrasena" placeholder="Contraseña">
+                            <button type="submit">Acceder</button>
+                        </form>
+                    </div>
+                    <div id="recuperar">
+                        <a href="#">¿Olvidó su nombre de usuario o contraseña?</a>
+                    </div>
+                    <div id="invitado">
+                        <p>Algunos cursos permiten el acceso de invitados</p>
+                        <form action="#" method="get">
+                            <button type="submit">Entrar como invitado</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="imagen">
+                <div><img class="w-[95%]"
+                        src="https://coexdevelopers.com/pluginfile.php/1/theme_fordson/logintopimage/1661355333/IMG_0578.jpg"
+                        alt=""></div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
