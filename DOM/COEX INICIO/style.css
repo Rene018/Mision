@@ -1,6 +1,7 @@
 
 @media (min-width: 768px) {
     #container{
-    grid-template-columns: 28% auto;
+    grid-template-columns:  30% 1fr;
+
 }
 }
