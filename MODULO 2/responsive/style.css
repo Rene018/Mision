@@ -30,9 +30,12 @@ header {
     color: white;
 }
 
-.welcome-text-title {
+.welcome-text-title, .more-info-title {
     font-family: 'Crimson Text', serif;
     color: white;
+}
+.more-info-title{
+    color: black;
 }
 
 .partners-title {
@@ -42,9 +45,12 @@ header {
 .welcome-text-text {
     color: white;
 }
-.partners-btn{
+.partners-btn, .more-info-btn{
     color: white;
     background-color: #212529;
+}
+.more-info-text {
+    color: #21252983;
 }
 
 @media (min-width: 900px) {
@@ -97,7 +103,7 @@ header {
         display: contents;
     }
 
-    .welcome-img {
+    .welcome-img{
         width: 55vw;
     }
 
@@ -108,40 +114,40 @@ header {
         padding-bottom: 0.8vw;
     }
 
-    .welcome-text-title {
+    .welcome-text-title, .more-info-title {
         font-size: 2.6vw;
         padding-bottom: 0.8vw;
     }
 
-    .welcome-text-text {
+    .welcome-text-text, .more-info-text {
         font-size: 1.3vw;
         font-weight: 100;
         padding-bottom: 0.8vw;
     }
 
     .welcome-btn {
-        padding: 0.5vw 1vw;
+        padding: 0.7vw 1.2vw;
         font-size: 1.2vw;
         font-weight: 100;
         border-radius: 0.25vw;
         border: 0vw;
     }
 
-    .partners {
+    .partners, .team {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2vw;
         margin-bottom: 4vw;
     }
-    .partners-text{
+    .partners-text, .team-text{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2vw;
     }
 
-    .partners-head {
+    .partners-head, .team-head {
         color: #74C69D;
         font-size: 1.5vw;
         letter-spacing: 0.4vw;
@@ -149,12 +155,12 @@ header {
         padding-bottom: 0.9vw;
     }
 
-    .partners-title {
+    .partners-title, .team-title {
         font-size: 2.6vw;
         padding-bottom: 0.9vw;
     }
 
-    .partners-text-text{
+    .partners-text-text, .team-text-text{
         font-size: 1.8vw;
         font-weight: 100;
         padding-bottom: 1vw;
@@ -171,8 +177,8 @@ header {
     .partners-img{
         height: 3.3vw;
     }
-    .partners-btn{
-        padding: 0.5vw 1vw;
+    .partners-btn, .more-info-btn{
+        padding: 0.7vw 1.2vw;
         font-size: 1.2vw;
         font-weight: 100;
         border-radius: 0.25vw;
@@ -182,18 +188,18 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 3vw;
     }
-    .more-info{
+    .more-info1, .more-info2{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     }
-    .more-info-img{}
-    .more-info-title{}
-    .more-info-text{}
-    .more-info-btn{}
-
-
-
+    .more-info2{
+        flex-direction: row-reverse;
+    }
+    .more-info-img {
+        width: 48vw;
+    }
 }
