@@ -13,6 +13,11 @@ header {
     background-color: #74C69D;
 }
 
+footer {
+    background-color: #74C69D;
+
+}
+
 #logo {
     display: flex;
     align-items: center;
@@ -30,30 +35,50 @@ header {
     color: white;
 }
 
-.welcome-text-title, .more-info-title {
+.welcome-text-title,
+.more-info-title,
+.team-name {
     font-family: 'Crimson Text', serif;
     color: white;
 }
-.more-info-title{
+
+.more-info-title,
+.team-name {
     color: black;
 }
 
-.partners-title {
+.partners-title,
+.team-title {
     font-family: 'Crimson Text', serif;
 }
 
 .welcome-text-text {
     color: white;
 }
-.partners-btn, .more-info-btn{
+
+.partners-btn,
+.more-info-btn {
     color: white;
     background-color: #212529;
 }
-.more-info-text {
+
+.more-info-text,
+.team-rol {
     color: #21252983;
 }
 
-@media (min-width: 900px) {
+.disclaimer {
+    color: white;
+    font-size: 1vw;
+}
+
+/* ##################################HOME########################################## */
+@media screen and  (min-width: 900px) {
+    .nav2{
+        position: fixed;
+        top: -20%;
+    }
+    
     html {
         font-size: 25px;
     }
@@ -103,7 +128,7 @@ header {
         display: contents;
     }
 
-    .welcome-img{
+    .welcome-img {
         width: 55vw;
     }
 
@@ -114,12 +139,15 @@ header {
         padding-bottom: 0.8vw;
     }
 
-    .welcome-text-title, .more-info-title {
+    .welcome-text-title,
+    .more-info-title {
         font-size: 2.6vw;
         padding-bottom: 0.8vw;
     }
 
-    .welcome-text-text, .more-info-text {
+    .welcome-text-text,
+    .more-info-text,
+    .team-rol {
         font-size: 1.3vw;
         font-weight: 100;
         padding-bottom: 0.8vw;
@@ -133,21 +161,25 @@ header {
         border: 0vw;
     }
 
-    .partners, .team {
+    .partners,
+    .team {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2vw;
         margin-bottom: 4vw;
     }
-    .partners-text, .team-text{
+
+    .partners-text,
+    .team-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2vw;
     }
 
-    .partners-head, .team-head {
+    .partners-head,
+    .team-head {
         color: #74C69D;
         font-size: 1.5vw;
         letter-spacing: 0.4vw;
@@ -155,51 +187,354 @@ header {
         padding-bottom: 0.9vw;
     }
 
-    .partners-title, .team-title {
+    .partners-title,
+    .team-title {
         font-size: 2.6vw;
         padding-bottom: 0.9vw;
     }
 
-    .partners-text-text, .team-text-text{
+    .partners-text-text,
+    .team-text-text {
         font-size: 1.8vw;
         font-weight: 100;
         padding-bottom: 1vw;
         text-align: center;
         line-height: 3vw;
     }
-    .partners-img-container{
+
+    .partners-img-container {
         display: flex;
         flex-direction: row;
         width: 80%;
         justify-content: space-around;
         padding-bottom: 1vw;
     }
-    .partners-img{
+
+    .partners-img {
         height: 3.3vw;
     }
-    .partners-btn, .more-info-btn{
+
+    .partners-btn,
+    .more-info-btn {
         padding: 0.7vw 1.2vw;
         font-size: 1.2vw;
         font-weight: 100;
         border-radius: 0.25vw;
-        border: 0vw; 
+        border: 0vw;
     }
-    .more-info-container{
+
+    .more-info-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 3vw;
     }
-    .more-info1, .more-info2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
+
+    .more-info1,
+    .more-info2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
     }
-    .more-info2{
+
+    .more-info2 {
         flex-direction: row-reverse;
     }
+
     .more-info-img {
         width: 48vw;
     }
+
+    .team-img-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+
+    .team-img-container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-color: #212529;
+        border-width: 5px;
+    }
+
+    .team-img-container2 {
+        display: flex;
+        border-width: 2vw black;
+    }
+
+    .team-name {
+        font-size: 1.7vw;
+    }
+
+    .team-rol {
+        font-size: 1.1vw;
+    }
+
+    footer {
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    .social {
+        display: flex;
+        gap: 1vw;
+    }
+    .team-img{
+        width: 14vw;
+    }
+    .disclaimer{
+        font-size: 1.5vw;
+    }
+}
+/* ##################################HOME-RESPONSIVE########################################## */
+@media screen and (min-width: 10px) and (max-width: 899px){
+    #nav1 {
+        position: fixed;
+        top: -20%;
+    }
+    html {
+        font-size: 25px;
+    }
+    #logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        gap: 2vw;
+    }
+    #text-logo {
+        font-size: 5vw;
+    }
+    
+    #img-logo {
+        width: 9.5vw;
+    }
+    
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #welcome {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 87%;
+        padding: 3.5vw 0px;
+    }
+    
+    .burger {
+        width: 9vw;
+    }
+    
+    #cont-welcome-img {
+        display: contents;
+    }
+    
+    .welcome-img {
+        width: 90vw;
+    }
+    
+    .welcome-text-head {
+        font-size: 6vw;
+        letter-spacing: 0.5vw;
+        font-weight: 200;
+        padding: 3vw 0vw;
+    }
+    
+    .welcome-text-title,
+    .more-info-title {
+        font-size: 7.5vw;
+        padding-bottom: 3vw;
+    }
+    
+    .welcome-text-text,
+    .more-info-text,
+    .team-rol {
+        font-size: 4.5vw;
+        font-weight: 100;
+        padding-bottom: 3vw;
+    }
+    
+    .welcome-btn {
+        padding: 1.7vw 2.2vw;
+        font-size: 4.5vw;
+        font-weight: 100;
+        border-radius: 0.9vw;
+        border: 0vw;
+    }
+    
+    .partners,
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    
+    .partners-text,
+    .team-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vw;
+    }
+    
+    .partners-head,
+    .team-head {
+        color: #74C69D;
+        font-size: 3.5vw;
+        letter-spacing: 0.9vw;
+        font-weight: bold;
+        padding-bottom: 0.9vw;
+    }
+    
+    .partners-title,
+    .team-title {
+        font-size: 6.6vw;
+        padding-bottom: 0.9vw;
+    }
+    
+    .partners-text-text,
+    .team-text-text {
+        font-size: 3.8vw;
+        font-weight: 100;
+        padding-bottom: 1vw;
+        text-align: center;
+        line-height: 7vw;
+    }
+    
+    .partners-img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5vw;
+        padding: 3vw 0vw;
+    }
+    
+    .partners-img {
+        height: 7vw;
+    }
+    
+    .partners-btn,
+    .more-info-btn {
+        padding: 1.8vw 2.3vw;
+        font-size: 4.3vw;
+        font-weight: 100;
+        border-radius: 0.9vw;
+        border: 0vw;
+    }
+    
+    .more-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+    
+    .more-info1,
+    .more-info2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+        
+    .more-info-img {
+        width: 90vw;
+    }
+    .team-text-text {
+        font-size: 5.7vw;
+        font-weight: 100;
+        padding-bottom: 1vw;
+        text-align: center;
+        line-height: 7vw;}
+    
+    .team-img-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    
+    .team-img-container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-color: #212529;
+        border-width: 1vw;
+        padding: 3vw ;
+    }
+    
+    .team-img-container2 {
+        display: flex;
+    }
+    
+    .team-name {
+        font-size: 6.4vw;
+    }
+    
+    .team-rol {
+        font-size: 4.1vw;
+    }
+    
+    footer {
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+    
+    .social {
+        display: flex;
+        gap: 3vw;
+    }
+    .disclaimer{
+        font-size: 3.3vw;
+    }
+    .team-img{
+        width: 36vw;
+    }
+}
+/* ##################################PORTAFOLIO########################################## */
+@media screen and  (min-width: 900px) {
+    
+}
+/* ##################################PORTAFOLIO-RESPONSIVE########################################## */
+@media screen and (min-width: 10px) and (max-width: 899px){
+
 }
