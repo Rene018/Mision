@@ -532,7 +532,15 @@ footer {
 }
 /* ##################################PORTAFOLIO########################################## */
 @media screen and  (min-width: 900px) {
-
+    .header-2 {
+        height: 14vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+main{
+    min-height: 74vh;
 }
 /* ##################################PORTAFOLIO-RESPONSIVE########################################## */
 @media screen and (min-width: 10px) and (max-width: 899px){
