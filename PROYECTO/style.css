@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100vh;
+}
+svg{
+    height: 500px;
+}
+
+.visible{
+    stroke: #000000;
+}
+input:focus{
+    outline: none;
+}
+input{
+    text-align: center;
+}

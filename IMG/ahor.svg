@@ -1,0 +1,13 @@
+<svg>
+        <line x1="100" y1="60" x2="260" y2="60" style="stroke:#f00; stroke-width:3"></line>
+        <line x1="260" y1="58.5" x2="260" y2="125" stroke="red" stroke-width="3"></line>
+        <line x1="100" y1="58.5" x2="100" y2="350" stroke="red" stroke-width="3"></line>
+        <line x1="65" y1="350" x2="135" y2="350" stroke="red" stroke-width="3"></line>
+        <line x1="100" y1="125" x2="160" y2="60" stroke="red" stroke-width="3"></line>
+        <circle cx="260" cy="153" r="30" stroke="red" stroke-width="3" fill="#f7f7f700"></circle>
+        <line x1="260" y1="183" x2="260" y2="275" style="stroke:#f00; stroke-width:3"></line>
+        <line x1="260" y1="197" x2="237" y2="235" stroke="red" stroke-width="3"></line>
+        <line x1="260" y1="197" x2="283" y2="235" stroke="red" stroke-width="3"></line>
+        <line x1="260" y1="274" x2="237" y2="330" stroke="red" stroke-width="3"></line>
+        <line x1="260" y1="274" x2="283" y2="330" stroke="red" stroke-width="3"></line>
+    </svg>
