@@ -14,10 +14,10 @@ function seleccionarPalabra() {
     return palabras[numero];
 }
 function dibujarAhorcado() {
-    if (intentosFa <intentosMaximos) {
+    
         document.querySelector(`#line-${intentosFa}`).classList.add('visible');
         console.log('hola');
-    }
+    
 }
 function recorrerPalabra(letra) {
     if ((letrasCorrectas.includes(letra)) || (letrasIncorrectas.includes(letra))) {
@@ -42,9 +42,10 @@ function recorrerPalabra(letra) {
 
 }
 function removv() {
-    document.querySelector('.dibujando').classList.remove(".visible");
-    
-}
+    for (let index = 0; index < intentosFa; index++) {
+        document.querySelector('.dibujando').remove(".visible");
+        
+    }}
 function validarIntento() {
     if (letrasCorrectas.length == palabra.length || (intentosFa>=intentosMaximos)) {
         removv()
@@ -73,4 +74,4 @@ document.addEventListener("keypress", function (event) {
 
         document.getElementById("formulario").reset();
     }
-});
+})
