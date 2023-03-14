@@ -1,5 +1,5 @@
 let palabras = ['perro', 'luna']
-let intentosMaximos = 8;
+let intentosMaximos = 7;
 let intentosFa = 0;
 let letrasCorrectas = [];
 let letrasIncorrectas = []
@@ -14,10 +14,11 @@ function seleccionarPalabra() {
     return palabras[numero];
 }
 function dibujarAhorcado() {
-    
-        document.querySelector(`#line-${intentosFa}`).classList.add('visible');
-        console.log('hola');
-    
+    if (intentosFa > 0) {
+        let lineas= document.querySelector(`#line-${intentosFa}`)
+        lineas.classList.add('visible');
+        console.log('dibujando');
+    }
 }
 function recorrerPalabra(letra) {
     if ((letrasCorrectas.includes(letra)) || (letrasIncorrectas.includes(letra))) {
@@ -26,7 +27,9 @@ function recorrerPalabra(letra) {
         for (let index = 0; index < palabra.length; index++) {
             const element = palabra[index];
             if (element == letra) {
-                letrasCorrectas.push(element)
+                let $contaGrap_element = document.querySelector(`#contaGrap-${index}`)
+                $contaGrap_element.innerHTML= element
+
             } else {
                 if (!letrasIncorrectas.includes(letra) && !palabra.includes(letra)) {
                     letrasIncorrectas.push(letra)
@@ -42,36 +45,76 @@ function recorrerPalabra(letra) {
 
 }
 function removv() {
-    for (let index = 0; index < intentosFa; index++) {
-        document.querySelector('.dibujando').remove(".visible");
-        
-    }}
+    if (intentosFa>0) {
+        for (let index = 1; index < intentosFa; index++) {
+           let lineas= document.querySelector('.visible')
+            lineas.classList.remove('visible');
+          console.log('eliminando')
+            
+        }
+    }
+    }
+
 function validarIntento() {
-    if (letrasCorrectas.length == palabra.length || (intentosFa>=intentosMaximos)) {
-        removv()
-        finDelJuego = true
-        palabras.splice(numero, 1)
-        console.log(palabras);
+    finDelJuego=false
+    if (letrasCorrectas.length == palabra.length) {
+        console.log('gano');
+        palabras.splice(numero,1)
         palabra = seleccionarPalabra()
         intentosMaximos = 7;
+        removv()
         intentosFa = 0;
         letrasCorrectas = [];
         letrasIncorrectas = []
+        finDelJuego = true
         
-
+    }
+    if (intentosFa == intentosMaximos) {
+        console.log('perdio');
+        palabras.splice(numero,1)
+        palabra = seleccionarPalabra()
+        intentosMaximos = 7;
+        removv()
+        intentosFa = 0;
+        letrasCorrectas = [];
+        letrasIncorrectas = []
+        finDelJuego = true
+        
+    }
+    if (intentosFa < intentosMaximos && finDelJuego == false) {
+        dibujarAhorcado()
     }
 }
+function mostrarintentos() {
+    let $erroneas= document.querySelector('#erroneas')
+    $erroneas.innerHTML=""
+    letrasIncorrectas.forEach(element => {
 
+        $erroneas.innerHTML+= `<li>${element}</li>`
+    });
+}
+function mostrarAciertos() {
+    let $contaGrap= document.querySelector('#contaGrap')
+    for (let index = 0; index < palabra.length; index++) {
+        $contaGrap.innerHTML+= `<div id="contaGrap-${index}"></div>`
+    }
+
+}
+function llenarAciertos() {
+    let $contaGrap_element = document.querySelector(`#contaGrap-${index}`)
+    $contaGrap_element.innerHTML= element
+}
 
 document.addEventListener("keypress", function (event) {
     if (event.keyCode === 13) {
         var $entrada = document.getElementById("entrada").value;
+        mostrarintentos()
+        mostrarAciertos()
         recorrerPalabra($entrada)
         validarIntento()
-        dibujarAhorcado()
         console.log(intentosFa);
 
 
         document.getElementById("formulario").reset();
     }
-})
+});
