@@ -1,13 +1,13 @@
 let palabras = ['perro', 'luna']
-let intentosMaximos = 7;
+let intentosMaximos = 8;
 let intentosFa = 0;
 let letrasCorrectas = [];
 let letrasIncorrectas = []
 let numero = 0
 let palabra = seleccionarPalabra()
 let finDelJuego = false;
-
-
+let $erroneas= document.querySelector('#erroneas')
+let $contaGrap= document.querySelector('#contaGrap')
 
 function seleccionarPalabra() {
     numero = Math.floor(Math.random() * palabras.length)
@@ -20,6 +20,24 @@ function dibujarAhorcado() {
         console.log('dibujando');
     }
 }
+function mostrarintentos() {
+    
+    $erroneas.innerHTML=""
+    letrasIncorrectas.forEach(element => {
+
+        $erroneas.innerHTML+= `<li>${element}</li>`
+    });
+}
+function mostrarAciertos() {
+    for (let index = 0; index < palabra.length; index++) {
+        $contaGrap.innerHTML+= `<div id="contaGrap-${index}"></div>`
+    }
+}
+function llenarAciertos() {
+    let $contaGrap_element = document.querySelector(`#contaGrap-${index}`)
+    $contaGrap_element.innerHTML= element
+}
+
 function recorrerPalabra(letra) {
     if ((letrasCorrectas.includes(letra)) || (letrasIncorrectas.includes(letra))) {
 
@@ -56,12 +74,14 @@ function removv() {
     }
 
 function validarIntento() {
+    mostrarintentos()
+    mostrarAciertos()
     finDelJuego=false
     if (letrasCorrectas.length == palabra.length) {
         console.log('gano');
         palabras.splice(numero,1)
         palabra = seleccionarPalabra()
-        intentosMaximos = 7;
+        intentosMaximos = 8;
         removv()
         intentosFa = 0;
         letrasCorrectas = [];
@@ -69,11 +89,11 @@ function validarIntento() {
         finDelJuego = true
         
     }
-    if (intentosFa == intentosMaximos) {
+    if (intentosFa == intentosMaximos-1) {
         console.log('perdio');
         palabras.splice(numero,1)
         palabra = seleccionarPalabra()
-        intentosMaximos = 7;
+        intentosMaximos = 8;
         removv()
         intentosFa = 0;
         letrasCorrectas = [];
@@ -83,38 +103,16 @@ function validarIntento() {
     }
     if (intentosFa < intentosMaximos && finDelJuego == false) {
         dibujarAhorcado()
+        $contaGrap=""
     }
 }
-function mostrarintentos() {
-    let $erroneas= document.querySelector('#erroneas')
-    $erroneas.innerHTML=""
-    letrasIncorrectas.forEach(element => {
-
-        $erroneas.innerHTML+= `<li>${element}</li>`
-    });
-}
-function mostrarAciertos() {
-    let $contaGrap= document.querySelector('#contaGrap')
-    for (let index = 0; index < palabra.length; index++) {
-        $contaGrap.innerHTML+= `<div id="contaGrap-${index}"></div>`
-    }
-
-}
-function llenarAciertos() {
-    let $contaGrap_element = document.querySelector(`#contaGrap-${index}`)
-    $contaGrap_element.innerHTML= element
-}
-
 document.addEventListener("keypress", function (event) {
     if (event.keyCode === 13) {
         var $entrada = document.getElementById("entrada").value;
-        mostrarintentos()
-        mostrarAciertos()
+        
         recorrerPalabra($entrada)
         validarIntento()
         console.log(intentosFa);
-
-
         document.getElementById("formulario").reset();
     }
 });
