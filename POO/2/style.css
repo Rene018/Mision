@@ -1,0 +1,43 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    color: #fafad4;
+    flex-direction: column;
+    background-color: #89b2a2;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+    background-color: #b0d1b2;
+    border-radius: 5%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border-radius: 10px;
+    border: 2px;
+    padding: 3px 5px;
+}
+
+#btn{
+    display: flex;
+}
+#container{
+display: flex;
+justify-content: center;
+}

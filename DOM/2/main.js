@@ -25,7 +25,7 @@ cuerpo.innerHTML+=`<div class="target">
 // const t2 = document.querySelector('#t2')
 // const t3 = document.querySelector('#t3')
 // t1.innerHTML= user.nombre
-
+console.log(nacimiento);
 document.getElementById("formulario").reset();    
 })
 
