@@ -1,4 +1,5 @@
 const boton = document.querySelector('#btn')
+const espacio = document.querySelector('.elt')
 let arr = []
 class Persona {
     nombre
@@ -18,38 +19,62 @@ class Persona {
     }
 
     info() {
-        return `Nombre: ${this.nombre}
-Cedula: ${this.cedula}`
+        return `${this.nombre} ${this.apellido}`
     }
 
     edad() {
-        let comp = this.fn.replaceAll('-', "")
-        return Math.floor((20230316 - comp) / 10000)
+        let comp = this.fn.split('-',)
+        let year1 = comp[0]
+        let mes1 = comp[1].replace('0', "")
+        let dia1 = comp[2]
+        let com = parseInt(`${year1}${mes1}${dia1}`)
+        let hoy = new Date()
+        let year2 = hoy.getFullYear()
+        let mes2 = hoy.getMonth() + 1
+        let dia2 = hoy.getDate()
+        let fa = parseInt(`${year2}${mes2}${dia2}`)
+        return Math.floor((fa - com) / 1000)
+    }
+
+    cumpleanos() {
+        let comp = this.fn.split('-',)
+        let mes1 = comp[1].replace('0', "")
+        let dia1 = comp[2]
+        let com = parseInt(`${mes1}${dia1}`)
+        let hoy = new Date()
+        let mes2 = hoy.getMonth() + 1
+        let dia2 = hoy.getDate()
+        let fa = parseInt(`${mes2}${dia2}`)
+        if (fa == com) {
+            return 'si'
+        } else {
+            return 'no'
+        }
     }
 }
-
-function validar(arg) {
-    
-}
-    
-
 boton.addEventListener('click', function () {
-
+    espacio.innerHTML = ""
     const nombre = document.querySelector('#nombre').value
     const apellido = document.querySelector('#ap').value
     const nacimiento = document.querySelector('#fn').value
     const cc = document.querySelector('#cc').value
-    const persona = new Persona(nombre, apellido, nacimiento, cc)
-    
-    arr.push(persona)
-    arr.forEach(element => {
-        console.log(`
-NOMBRE: ${element.nombre}
-APELLIDOS: ${element.apellido}
-F.N: ${element.fn}
-EDAD: ${element.edad()}
-CEDULA: ${element.cedula}`);
-    });
+    if (nombre == "" || apellido == "" || nacimiento == "" || cc == "") {
+        console.log('hola');
+    } else {
+        const persona = new Persona(nombre, apellido, nacimiento, cc)
+        arr.push(persona)
+        document.getElementById("formulario").reset();
+        relenar()
+    }
 
-    document.getElementById("formulario").reset();
+
 })
+
+function relenar() {
+    espacio.innerHTML=""
+    arr.forEach(element => {
+        espacio.innerHTML += `<tr>
+<td>${element.info()}</td>
+<td>${element.cumpleanos()}</td>
+</tr>`});
+}
