@@ -1,6 +1,8 @@
 const boton = document.querySelector('#btn')
 const espacio = document.querySelector('.elt')
-let arr = []
+const btn = document.querySelector('#btn-buscar')
+const ipnB = document.querySelector('#inpt-buscar')
+let personas = []
 class Persona {
     nombre
     apellido
@@ -62,17 +64,24 @@ boton.addEventListener('click', function () {
         console.log('hola');
     } else {
         const persona = new Persona(nombre, apellido, nacimiento, cc)
-        arr.push(persona)
+        personas.push(persona)
         document.getElementById("formulario").reset();
-        relenar()
-    }
 
+    }
+    relenar()
 
 })
+btn.addEventListener('click', function () {   
+        localStorage.setItem('arr', JSON.stringify(personas))
+})
 
+window.addEventListener('load',function () {
+    personas= JSON.parse(localStorage.getItem('arr'))
+    console.log(personas );
+})
 function relenar() {
-    espacio.innerHTML=""
-    arr.forEach(element => {
+    espacio.innerHTML = ""
+    personas.forEach(element => {
         espacio.innerHTML += `<tr>
 <td>${element.info()}</td>
 <td>${element.cumpleanos()}</td>
