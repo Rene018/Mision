@@ -54,31 +54,36 @@ class Persona {
         }
     }
 }
-boton.addEventListener('click', function () {
-    espacio.innerHTML = ""
+boton.addEventListener('click', function (e) {
+    e.preventDefault()
     const nombre = document.querySelector('#nombre').value
     const apellido = document.querySelector('#ap').value
     const nacimiento = document.querySelector('#fn').value
     const cc = document.querySelector('#cc').value
+
     if (nombre == "" || apellido == "" || nacimiento == "" || cc == "") {
         console.log('hola');
     } else {
         const persona = new Persona(nombre, apellido, nacimiento, cc)
         personas.push(persona)
         document.getElementById("formulario").reset();
-
     }
     relenar()
 
 })
-btn.addEventListener('click', function () {   
-        localStorage.setItem('arr', JSON.stringify(personas))
+btn.addEventListener('click', function (e) {
+    e.preventDefault()
+    localStorage.clear()
+    for (let index = 0; index < personas.length; index++) {
+        const element = personas[index];
+        if(element.cedula==ipnB.value){
+            localStorage.setItem('personag', JSON.stringify(element))
+        }
+    }
+    window.open('http://127.0.0.1:5500/POO/2/cumple/index.html');
+    document.getElementById("form-header").reset();
 })
 
-window.addEventListener('load',function () {
-    personas= JSON.parse(localStorage.getItem('arr'))
-    console.log(personas );
-})
 function relenar() {
     espacio.innerHTML = ""
     personas.forEach(element => {
@@ -87,3 +92,4 @@ function relenar() {
 <td>${element.cumpleanos()}</td>
 </tr>`});
 }
+

@@ -6,14 +6,11 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
     color: #fafad4;
-    flex-direction: column;
     background-color: #89b2a2;
 }
-#formulario{
+
+#formulario {
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -22,30 +19,55 @@ body {
     border-radius: 5%;
 }
 
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    margin-right: 3%;
+
+}
+
+nav {
+    display: flex;
+
+}
+
+#form-header {
+    display: flex;
+    gap: 8%;
+}
+
 label {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+.main{
+    margin-top: 13%;
+}
 input {
     border-radius: 10px;
     border: 2px;
     padding: 3px 5px;
 }
 
-#btn{
+#btn {
     display: flex;
 }
-#container{
-display: flex;
-justify-content: center;
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 10%
+
 }
-#btn-buscar{
+
+#btn-buscar {
     display: flex;
     background-color: transparent;
     border: 0;
 }
-#icon-buscar{
+
+#icon-buscar {
     width: 2rem;
 }

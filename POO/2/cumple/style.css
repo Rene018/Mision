@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.remove{
+    display: none !important;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fafad4;
+    background-color: #89b2a2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #b0d1b2;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4.5%;
+    box-shadow: rgba(83, 112, 96, 0.63) 0px 3px 8px;
+}
+h2{
+    display: flex;
+}
