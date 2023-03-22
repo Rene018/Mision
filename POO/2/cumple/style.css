@@ -18,13 +18,49 @@ body{
 .container{
     background-color: #b0d1b2;
     height: 50%;
-    width: 80%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1%;
     border-radius: 4.5%;
     box-shadow: rgba(83, 112, 96, 0.63) 0px 3px 8px;
 }
 h2{
     display: flex;
+}
+.container-2{
+    display: grid;
+    grid-template-columns: [colum-1]33% [colum-2]1fr;
+    grid-template-rows: [row-1]1fr [row-2]1fr;
+}
+.imagen{
+    display: flex;
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    grid-row-start:1;
+    grid-row-end: 3;
+    height: 100%;
+}
+.inform{
+    display: flex;
+    background-color: rgb(28, 32, 32);
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+    grid-row-start:1;
+    grid-row-end: 2;
+    height: 100%;
+}
+.cumple{
+    display: flex;
+    background-color: rgb(223, 31, 31);
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+    grid-row-start:2;
+    grid-row-end: 3;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
