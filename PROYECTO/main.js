@@ -7,7 +7,7 @@ let finDelJuego = false;
 
 function seleccionarPalabra() {
     return palabras[Math.floor(Math.random() * palabras.length)];
-  }
+}
 function dibujarAhorcado() {
     document.querySelector(`#line-${intentos}`).classList.add('visible');
 }
